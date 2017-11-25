@@ -1,0 +1,22 @@
+{
+    "presets": [
+        "react-app"
+    ],
+    "plugins": [
+        [
+            "react-css-modules",
+            {
+                "exclude": "node_modules",
+                "generateScopedName": "[name]__[local]__[hash:base64:5]",
+                "filetypes": {
+                    ".scss": {
+                        "syntax": "postcss-scss",
+                        "plugins": [
+                            "postcss-nested"
+                        ]
+                    }
+                }
+            }
+        ]
+    ]
+}
