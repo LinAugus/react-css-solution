@@ -163,8 +163,7 @@ module.exports = {
               {
                 loader: require.resolve('css-loader'),
                 options: {
-                  modules: true,
-                  localIdentName: '[name]_[local]_[hash:base64:5]'
+                  importLoaders: 1
                 },
               },
               {
@@ -187,23 +186,6 @@ module.exports = {
                 },
               },
             ],
-          },
-          // sass-loader
-          {
-            test: /\.scss/,
-            use: [
-              require.resolve('style-loader'),
-              {
-                loader: require.resolve('css-loader'),
-                options: {
-                  modules: true,
-                  // sourceMap: true,
-                  importLoaders: 2,
-                  localIdentName: '[name]__[local]__[hash:base64:5]'
-                }
-              },
-              require.resolve('sass-loader')
-            ]
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.

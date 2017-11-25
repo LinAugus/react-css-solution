@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './Home.scss';
+import './Home.css';
 
 const Home = (props) => (
-    <div className={style.title}>
+    <div className="title">
         {props.name}
     </div>
 )

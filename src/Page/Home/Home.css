@@ -1,14 +1,12 @@
-$blue: #eee;
-
 .home {
     background: #eee;
 }
 
 .color {
-    color: $blue;
+    color: #eee;
 }
 
 .title {
-    composes: color;
+    color: #eee;
     font-size: 24px;
 }
