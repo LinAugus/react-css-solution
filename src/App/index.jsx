@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
-import './App.css';
+import './App.less';
 import Home from '../Page/Home';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="header">
-          <img src={logo} className="logo" alt="logo" />
-          <h1 className="title">Welcome to React</h1>
+      <div styleName="wrapper">
+        <header styleName="header">
+          <img src={logo} styleName="logo" alt="logo" />
+          <h1 styleName="title">Welcome to React</h1>
         </header>
-        <p className="intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+        <p styleName="intro">
+          Less + babel-react-css-modules + bem
         </p>
         <Home name="Hello React" />
       </div>

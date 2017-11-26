@@ -1,0 +1,19 @@
+{
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+        [
+            "react-css-modules", {
+                "exclude": "node_modules",
+                "generateScopedName": "[name]-[local]-[hash:base64:6]",
+                "filetypes": {
+                    ".less": {
+                      "syntax": "postcss-less",
+                      "plugins": ["postcss-nested"]
+                    }
+                  }
+            } 
+        ]
+    ]
+}
