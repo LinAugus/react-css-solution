@@ -1,10 +1,15 @@
 import React from 'react';
-import './Home.css';
+import styled from 'styled-components';
+
+const HomeWrapper = styled.div`
+    color: #eee;
+    font-size: 24px;
+`
 
 const Home = (props) => (
-    <div className="title">
+    <HomeWrapper>
         {props.name}
-    </div>
+    </HomeWrapper>
 )
 
 export default Home;
