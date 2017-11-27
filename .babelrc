@@ -14,8 +14,7 @@
                 "generateScopedName": "[name]-[local]-[hash:base64:6]",
                 "filetypes": {
                     ".less": {
-                      "syntax": "postcss-less",
-                      "plugins": ["postcss-nested"]
+                      "syntax": "postcss-less"
                     }
                   }
             } 

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { Table } from 'antd';
+import './Demo.less'
+
+import { Table, Progress } from 'antd';
 
 const dataSource = [{
     key: '1',
@@ -33,8 +35,13 @@ class Demo extends Component {
 
     render() {
         return (
-            <div>
+            <div styleName="wrapper">
                 <Table dataSource={dataSource} columns={columns} />
+                <Progress percent={30} />
+                <Progress percent={50} status="active" />
+                <Progress percent={70} status="exception" />
+                <Progress percent={100} />
+                <Progress percent={50} showInfo={false} />
             </div>
         )
     }
